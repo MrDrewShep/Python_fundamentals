@@ -17,3 +17,6 @@ from vscode:
     git commit -m "Initial commit" (this will create an error, please login)
     git config user.email "user@user.com"
     git config user.name "Test User"
+
+    git remote add origin https://github.com/MrDrewShep/Python_fundamentals.git
+    git push origin master

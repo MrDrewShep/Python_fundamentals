@@ -103,5 +103,3 @@ print(me.get_kingdom())
 
 # Virtual environments
 # isolated environment in python used to test and share projects in order to keep dependencies local
-
-#hw fill in blanks in python fundamendals vocab list

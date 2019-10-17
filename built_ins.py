@@ -53,4 +53,3 @@ print(my_numbers)
 
 # Could be used, for example, to take a giant list of email addreses and identify/remove duplicates, after they are all lowercased
 #HW continue reading python docs for built ins, starting at OPEN()
-#HW fill out feedback survey

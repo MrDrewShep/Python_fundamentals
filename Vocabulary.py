@@ -26,7 +26,7 @@ single inheritance - class inherits from a single other class
 #############
 """     PYTHON FUNDAMENTALS
 
-API - 
+API - application programming interface, an interface by which one program accesses another
 
 argument - what you pass into a function, per its definition [line]
             def myfunc(param1, param2, param3):
@@ -45,7 +45,7 @@ boolean - data type, true or false
 
 branching - (if, then, else) allows for distinct outcomes based upon true/false evaluations
 
-callback - a function that calls on another function within its parameters
+callback - a function that takes as an argument/parameter, another function. one use case: allows us to force an order of operations, if we're pinging web servers with various lags that will result in operations not necessairly flowing orderly.
 
 closure - (see callback)
 
@@ -67,6 +67,10 @@ elif - if all preceding if/elif conditions resolve to FALSE, and this elif resol
 
 else - if all preceding if/elif conditions resolve to FALSE, these default conditions are executed
 
+endpoint - Simply put, an endpoint is one end of a communication channel. When an API interacts with another system, the touchpoints of this communication are considered endpoints. For APIs, an endpoint can include a URL of a server or service.
+
+exit case - the condition under which a loop is left
+
 float - data type, rational number positive or negative, can contain decimals
 
 for loop - block of code that is executed over the number of items specified in a sequence
@@ -83,11 +87,30 @@ interpreter - python's way of executing python code
 
 .json - javascript object notation, aka looks just like a python dictionary
 
-linked list - 
+linked list - a linear collection of nodes (data elements). each node contains (1) data, and (2) a reference to the very next node. First node is what the list calls it's "head". When you reach the end of the chain, the last node's reference to the next will return "None"
 
 list - mutable and ordered data type denoted by []
 
-list comprehension - #HW define
+list comprehension - List comprehensions provide a concise way to create lists. 
+
+                    aka Building a list with an inline statement
+
+                    # expanded way
+                    for item in list:
+                    if conditional:
+                        expression
+
+                    #list comprehension way
+                    new_list = [expression(i) for i in old_list if filter(i)]
+
+                    It consists of brackets containing an expression followed by a for clause, then
+                    zero or more for or if clauses. The expressions can be anything, meaning you can
+                    put in all kinds of objects in lists.
+
+                    The result will be a new list resulting from evaluating the expression in the
+                    context of the for and if clauses which follow it. 
+
+                    The list comprehension always returns a result list. 
 
 modular programming - e.g. data v repo v UI. antonym: spaghetti coding. insulating chunks of code so that one change in a program doesn't break everything else going on.
 
@@ -107,9 +130,11 @@ PII - personally identifiable information. keep this data out of the hands of th
 
 procedure - sequential steps you take while performing actions. functions allow for procedure reusability.
 
-proxy/ing - #hw
+proxy/ing - a middleman used for either offensive or defensive purposes
 
-refactoring - 
+recursion - a function calling itself, to work with a bite sized amount of operation
+
+refactoring - go through code and lean/streamline/rewrite it to be most optimal
 
 repository pattern (middleware / middleman) - separation of concern. in our class example: data v repo v UI
 
@@ -125,7 +150,7 @@ set - mutable and unordered data type {}
 
 silently - does not throw an error, if one might exist
 
-slicing - 
+slicing - The slice() constructor creates a slice object representing the set of indices specified by range(start, stop, step). 
 
 string - data type denoted by ' or "
 

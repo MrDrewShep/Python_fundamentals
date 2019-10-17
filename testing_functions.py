@@ -42,6 +42,3 @@ def test_find_user_exception():
 def test_find_user_takes_string_returns_string():
     assert find_user("2") == "A user"
 
-
-
-#HW Agile prework for Friday's lecture

@@ -29,5 +29,3 @@ else:
 
 with open("./file_io_hub/file_two.py", "w") as f:
     f.write("#I'm a comment\nprint(\"Hello World.\")")
-
-#HW download a skin mod

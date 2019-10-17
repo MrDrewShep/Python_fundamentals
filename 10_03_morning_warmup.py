@@ -109,14 +109,10 @@ for i in purchased_items:
     total_savings += savings
 
 total_savings = round(total_savings,2)
+overpaid = abs(total_savings)
 
-print(f"You saved ${total_savings}.") if total_savings > 0 else print(f"No savings occured. Sucker. You overpaid ${total_savings}.")
+print(f"You saved ${total_savings}.") if total_savings > 0 else print(f"No savings occured. Sucker. You overpaid ${overpaid}.")
 
-print("%.2f"%total_savings)
-print(round(total_savings,2))
-print("{0:.2f}".format(total_savings))
-
-#? Overall, how to optimize part(2) of the prompt?
-#? Which of the 2 decimal format methods is optimal? Explain the syntax?
-#? How to use abs() in the f-string, when they overpaid?
-#? autofill for def incorporates "self" as the 1st param. leave it there?
+# print("%.2f"%total_savings)             # More advanced
+print(round(total_savings,2))             # Simplest
+# print("{0:.2f}".format(total_savings))  # Not recommended

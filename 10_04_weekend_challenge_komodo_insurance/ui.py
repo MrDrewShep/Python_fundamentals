@@ -50,5 +50,4 @@ while True:
         print(manager.read_menu())
 
 
-#? os.system("cls" if os = "nt") means which operating systems?
 #? In the sleezy auto example, why is changing of individual attributes in the car class, but the modify vehicle method is in the inventory class?

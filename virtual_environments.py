@@ -53,8 +53,3 @@ for entry in data:
 
 
 print()
-
-#HW iotlab indy
-#HW BLE bluetooth low energy
-#HW or #? define endpoint
-

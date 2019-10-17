@@ -1,3 +1,8 @@
+
+# Function can see scope outside, to the program it resides within
+# The program housing a function, cannot see inside the function
+
+
 def FUNCTION_NAME_HERE(parameters):
     print(parameters)
     # Code Block

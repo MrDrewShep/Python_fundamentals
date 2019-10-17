@@ -10,8 +10,6 @@ import os
 
 list_of_characters = []
 
-#? How to reprint the "loading" counter without clearing screen?
-
 def get_characters(next_url, total="calculating"):
     os.system("cls")
     print("Loading... ", len(list_of_characters), " of ", total)

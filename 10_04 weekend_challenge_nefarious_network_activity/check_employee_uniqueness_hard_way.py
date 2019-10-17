@@ -12,8 +12,3 @@ print(imp_list)
 #         # add_dictionary[header] = employee
 #         print(imp_list[0])
 #         print(add_dictionary)
-
-
-
-
-#HW practice enumerate()
