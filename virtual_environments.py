@@ -37,7 +37,13 @@ You are using pip version 19.0.3, however version 19.2.3 is available.
 You should consider upgrading via the 'python -m pip install --upgrade pip' command.
 """
 
-#HW why do people get colds in the fall?
+"""
+CHMOD changing permissions:
+
+wrx wrx wrx     write   read    execute
+U   G   W       user    group   world
+
+"""
 
 import requests
 

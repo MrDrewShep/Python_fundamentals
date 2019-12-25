@@ -50,7 +50,7 @@ while True:
         pass
 
     for entry in data_character_detail:
-        print(entry, ":\t\t", data_character_detail[entry])   #HW figure out how to align 2nd column
+        print(entry, ":\t\t", data_character_detail[entry])
 
     print("\n")
     selection = input("View another character (y/n) ")
@@ -61,5 +61,3 @@ while True:
     elif selection == "n":
         os.system("cls")
         quit()  
-
-#HW find a terminal spinner package (github has one)

@@ -1,0 +1,63 @@
+1. AWS console, launch new instance
+	ubuntu
+2. Create new access/key pair
+	save .pem file
+3. From console
+	>> ssh -i .\flask_testing.pem ubuntu@18.224.140.234
+4. From instance
+	sudo apt update	(updates the Ubunto OS)
+	sudo apt upgrade
+		select: [keep local versions installed]
+
+
+	sudo apt install software-properties-common 	(allows you to install python3.7 instead of just python3.6. this is just because of ubunto 18.04)
+	sudo add-apt-repository ppa:deadsnakes/ppa 
+	sudo apt install python3.7
+		you'll have to tell it every time
+			>> python3.7
+
+4. Set up bash alias
+	>> cd[space] (takes you to home)
+	>> la	
+	>> touch .bash_aliases 
+	>> vim .bash_aliases
+5. In VIM, add alias
+	>> alias py=python3.7
+	to exit...   ESC + : + wq + ENTER      (write, quit)
+6. Back in Bash
+	>> source .bashrc	(reloads the bash configuration)
+7. Install pip
+	>> sudo apt install python3-pip
+8. Install virtual environment
+	>> sudo apt install python3-venv
+9. If needed, vim the requirements.txt file and remove the package-resources item
+10. Install packages for app
+	>> pip install -r requirements.txt 
+
+
+Setting up the app
+1. Set the environment variable
+	>> export FLASK_APP=app.py
+2. We manually told Ubutnu, listen on the default gateway for traffic and direct it to something
+	>> python3 -m flask run -h 0.0.0.0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

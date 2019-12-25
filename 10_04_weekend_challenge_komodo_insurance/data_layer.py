@@ -39,5 +39,5 @@ class Menu:
     def add_badge(self, new_badge):
         self.contents[new_badge] = []  # watch this to see if it works, append to dict
 
-#? How to do dictionary with { badge : [permissions]} ?
-#? Add/remove door permissions within the Badge class doesn't seem to work, because a badge isn't its own iterable. it's just a part of the dictionary entry. so make the changes at the menu level?
+#F How to do dictionary with { badge : [permissions]} ?
+#F Add/remove door permissions within the Badge class doesn't seem to work, because a badge isn't its own iterable. it's just a part of the dictionary entry. so make the changes at the menu level?

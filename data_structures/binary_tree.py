@@ -1,4 +1,3 @@
-#HW finish watching crash course computer science vids
 #HW solve for tower of hanoi
 #HW solve for missionary cannibal problem
 

@@ -79,6 +79,8 @@ function - a named, reusable block of code that can (1) take in information, and
          - the only case where an internal variable does not have scope to the rest of the program. if/for/while do give scope to vars.
          - correctly said, "That if statement did in fact give scope to the rest of the program."
 
+helper function - it's a function, for use by functions. when multiple functions each require the same block of code, they can use a helper, which can be reused by multiple parent functions.
+
 if - when a condition is met, execute the following code
 
 integer - data type, whole number positive or negative

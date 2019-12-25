@@ -1,7 +1,5 @@
 
 # this is O()
-#HW define helper function, (has underscore before fun name), diff btwn regular method, add to vocab list
-
 # This could/should be refactored, rather than pass args through to track where we are in total, +/- currentl location in the lines the call recursion, to sum total where we are
 
 def binary_search(numbers, item, first=0, last=None):

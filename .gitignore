@@ -2,3 +2,7 @@ environment
 __pycache__
 .pytest_cache
 .vscode
+career_services/
+files_we_created_to_deploy_capstone_flask_app/
+visualization/
+venv/

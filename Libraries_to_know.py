@@ -1,10 +1,18 @@
 """
 
+boto3 - AWS developer library
+
+colorama - text coloring and reverse highlighting
+
 csv - file io for csv files
 
-datetime - dates and times
+datetime/date/time - dates and times
+
+deque - 
 
 file io - 
+
+flask - 
 
 os - operating systems, create/modify directories
 

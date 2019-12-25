@@ -72,7 +72,6 @@ class Inventory:
             # In order to have a long chain of if and elif statments, I can modularly call what function I need
             # based on the name of the key. Check out the getattr function. Notice how I call what comes back
             getattr(to_change, f'change_{key}')(data[key]) if data[key] else None
-            
         return 1
 
     def read_inventory(self):
@@ -82,5 +81,3 @@ class Inventory:
         for index, vehicle in enumerate(self.vehicles):
             message += f"{ index } - { vehicle.make }, { vehicle.model }, { vehicle.year }\n"
         return message
-
-#hw getattr function

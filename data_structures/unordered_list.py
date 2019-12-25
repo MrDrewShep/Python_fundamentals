@@ -99,6 +99,3 @@ print(my_linked.length())
 
 print(my_linked.search(89))
 print(my_linked.index(177))
-
-
-#? best way to build a deck of cards (including multiples), and shuffle/randomize the order for use? Randomzie it as I pull them? Ideally I'd randomize them into a list then draw from the top.

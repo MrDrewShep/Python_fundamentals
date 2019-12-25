@@ -1,5 +1,6 @@
 
 import csv
+import datetime
 
 employee_list = list(csv.DictReader(open("employees.csv","r")))
 access_list = list(csv.DictReader(open("access_list.csv","r")))
@@ -11,6 +12,8 @@ result_list = []
 
 for access in access_list:
     authorized = False
+    m, d, y = [int(x) for x in access["access_date"].split("/")]
+    # access_date = map(int, access["access_date"].split("/"))
     
     for employee in employee_list:
         if access["ip_address"] == employee["ip_address"]:
@@ -19,9 +22,9 @@ for access in access_list:
             break
 
     if authorized:
-        result_list.append(["Valid", access["access_date"], access["ip_address"], auth_employee])
+        result_list.append(["Valid", datetime.date(y, m, d),  access["ip_address"], auth_employee])
     elif not authorized:
-        result_list.append(["UNAUTH", access["access_date"], access["ip_address"]])
+        result_list.append(["UNAUTH", datetime.date(y, m, d), access["ip_address"]])
 
 
 # def key_func1(row):
@@ -55,8 +58,4 @@ print(f"Unauthorized: \t", count_unauth)
 # for date in result_list:
 #     date[1] = datetime(date[1])
 
-#HW how to solve this with filter()
-#HW how to sort by date, not by its string
 #? how to properly use csvimport, OrderedDict data type doesn't have the same functions available as dictionary
-#? how to format as date and actually sort by date and not string
-#? more efficient way to sort twice? the key=lamda method is not working for me, but the nested sorted() works.
